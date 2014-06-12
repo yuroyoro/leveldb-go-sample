@@ -1,5 +1,5 @@
 leveldb-go-sample
 =================
 
-sample application of using leveldb from Golang
+ʕ　 ﾟ皿ﾟ ʔ sample application of using leveldb from Golang
 
