@@ -10,6 +10,7 @@ import (
 	"unsafe"
 )
 
+// C Level pointer holder
 type LevelDB struct {
 	CLevelDB *C.leveldb_t
 	Name     string

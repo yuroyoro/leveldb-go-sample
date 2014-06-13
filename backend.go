@@ -50,6 +50,10 @@ func (backend *Backend) Start() {
 				backend.db.Delete(delreq.key)
 				log.Printf("Backend.Delete(%s)\n", delreq.key)
 			case <-backend.quitch:
+				close(backend.putch)
+				close(backend.delch)
+				close(backend.quitch)
+
 				log.Printf("Backend stoped")
 				return
 			}
